@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundo Submarino 360° — Experiências Imersivas em Aeroportos</title>
+  <meta name="description" content="Uma experiência imersiva 360° que já encanta passageiros nos maiores aeroportos do Brasil. Explore o oceano antes de embarcar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo__mark">MS</span>
+        <span class="logo__text">Mundo Submarino <strong>360°</strong></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#onde-encontrar">Onde Encontrar</a></li>
+        <li><a href="#sobre">Quem Somos</a></li>
+        <li><a href="#contato" class="nav__cta">Fale Conosco</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== 1. HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__stage">
+      <!-- Vídeo desktop (landscape) -->
+      <video class="hero__video hero__video--desktop" autoplay muted loop playsinline>
+        <source src="imagens/hero-bg2.webm" type="video/webm" />
+        <source src="imagens/hero-bg2.mp4" type="video/mp4" />
+      </video>
+      <!-- Vídeo mobile (vertical 9:16) -->
+      <video class="hero__video hero__video--mobile" autoplay muted loop playsinline>
+        <source src="imagens/hero-mobile.webm" type="video/webm" />
+        <source src="imagens/hero-mobile.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__ocean-bg">
+        <div class="hero__ocean-layer layer-1"></div>
+        <div class="hero__ocean-layer layer-2"></div>
+        <div class="hero__ocean-layer layer-3"></div>
+      </div>
+      <div class="hero__inner">
+        <div class="hero__content" data-reveal>
+          <div class="pill pill--light">
+            <span class="pill__dot"></span>
+            Disponível em aeroportos do Brasil
+          </div>
+          <h1 class="hero__title">
+            <span class="hero__title-line">Explore o Oceano</span>
+            <span class="hero__title-line hero__title-line--accent">Sem Sair do Aeroporto</span>
+          </h1>
+          <p class="hero__subtitle">
+            Uma experiência imersiva 360° que já encanta passageiros nos maiores aeroportos do Brasil. Cinco minutos que transformam sua espera em memória.
+          </p>
+          <div class="hero__actions">
+            <a href="#onde-encontrar" class="btn btn--gold">Encontrar uma unidade</a>
+            <a href="#como-funciona" class="btn btn--outline-light">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 16,12 10,16" fill="currentColor"/></svg>
+              Como funciona
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.hero__stage -->
+    <div class="hero__stats-bar">
+      <div class="container hero__stats-inner">
+        <div class="hstat">
+          <span class="hstat__n">8+</span>
+          <span class="hstat__l">Aeroportos</span>
+        </div>
+        <div class="hstat__sep"></div>
+        <div class="hstat">
+          <span class="hstat__n">135M</span>
+          <span class="hstat__l">Passageiros/ano</span>
+        </div>
+        <div class="hstat__sep"></div>
+        <div class="hstat">
+          <span class="hstat__n">5 min</span>
+          <span class="hstat__l">Experiência completa</span>
+        </div>
+        <div class="hstat__sep"></div>
+        <div class="hstat">
+          <span class="hstat__n">98%</span>
+          <span class="hstat__l">Satisfação</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 2. SOBRE A EXPERIÊNCIA ========== -->
+  <section class="section bg-white" id="experiencia">
+    <div class="container grid-2col">
+      <div class="col-text" data-reveal>
+        <span class="label">Sobre a Experiência</span>
+        <h2 class="title-serif">O que é o Mundo Submarino 360°?</h2>
+        <p class="body-text">
+          O Mundo Submarino 360° é uma experiência imersiva que transporta você para o fundo do oceano através de imagens envolventes em 360 graus, projetadas em estruturas de LED transparente instaladas nos aeroportos.
+        </p>
+        <p class="body-text">
+          Em poucos minutos, você vive uma jornada sensorial única — com cenários marinhos, espécies fascinantes e uma atmosfera que conecta você à natureza mesmo no coração do agito aeroportuário.
+        </p>
+        <div class="feature-row">
+          <div class="feature">
+            <div class="feature__icon">◎</div>
+            <div>
+              <strong>Imersão 360° completa</strong>
+              <p>Visão panorâmica sem pontos cegos</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">◎</div>
+            <div>
+              <strong>Experiência rápida</strong>
+              <p>Ideal para o tempo de espera</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">◎</div>
+            <div>
+              <strong>Para todas as idades</strong>
+              <p>Famílias, casais e viajantes solo</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">◎</div>
+            <div>
+              <strong>Instalação não invasiva</strong>
+              <p>Opera sem reformas no terminal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-visual" data-reveal data-reveal-delay="150">
+        <div class="photo-card photo-card--ocean">
+          <div class="photo-card__img">
+            <video class="photo-card__video" autoplay muted loop playsinline>
+              <source src="imagens/experiencia.webm" type="video/webm" />
+              <source src="imagens/experiencia.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="photo-card__caption">Passageiro em experiência total de imersão</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3. COMO FUNCIONA ========== -->
+  <section class="section bg-sand" id="como-funciona">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label">Processo</span>
+        <h2 class="title-serif">Simples, rápido<br /><em>e inesquecível</em></h2>
+        <p class="section-intro">Duração ideal para quem aguarda o embarque</p>
+      </div>
+      <div class="steps" data-reveal>
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__icon">🚪</div>
+          <h3>Entre na experiência</h3>
+          <p>Localize o cubo LED na área de embarque. Sem filas longas, sem reserva — basta chegar e entrar.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__icon">🌊</div>
+          <h3>Viva a imersão 360°</h3>
+          <p>Imagens em alta resolução e áudio espacial envolvem você completamente. O oceano ao seu redor.</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__icon">✈️</div>
+          <h3>Continue transformado</h3>
+          <p>Saia renovado para o embarque. Uma pausa de cinco minutos que muda completamente sua experiência.</p>
+        </div>
+      </div>
+      <div class="duration-note" data-reveal>
+        Experiência completa em <strong>5 minutos</strong> — projetada para o tempo médio de espera nos terminais
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. ONDE ENCONTRAR ========== -->
+  <section class="section bg-white" id="onde-encontrar">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label">Localização</span>
+        <h2 class="title-serif">Onde viver<br /><em>essa experiência</em></h2>
+        <p class="section-intro">Presente nos maiores terminais de passageiros do Brasil</p>
+      </div>
+      <div class="airports-grid" data-reveal>
+        <div class="acard">
+          <div class="acard__top">
+            <div class="acard__city">São Paulo</div>
+            <div class="badge badge--active"><span></span> Disponível</div>
+          </div>
+          <div class="acard__name">Aeroporto Internacional de Guarulhos</div>
+          <div class="acard__terminal">Terminal 3 — Embarque Internacional</div>
+          <div class="acard__footer">
+            <a href="#contato" class="link-arrow">Ver localização →</a>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard__top">
+            <div class="acard__city">São Paulo</div>
+            <div class="badge badge--active"><span></span> Disponível</div>
+          </div>
+          <div class="acard__name">Aeroporto de Congonhas</div>
+          <div class="acard__terminal">Terminal Principal — Embarque Doméstico</div>
+          <div class="acard__footer">
+            <a href="#contato" class="link-arrow">Ver localização →</a>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard__top">
+            <div class="acard__city">Brasília</div>
+            <div class="badge badge--active"><span></span> Disponível</div>
+          </div>
+          <div class="acard__name">Aeroporto Internacional de Brasília</div>
+          <div class="acard__terminal">Terminal 1 — Corredor Central</div>
+          <div class="acard__footer">
+            <a href="#contato" class="link-arrow">Ver localização →</a>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard__top">
+            <div class="acard__city">Rio de Janeiro</div>
+            <div class="badge badge--active"><span></span> Disponível</div>
+          </div>
+          <div class="acard__name">Aeroporto Internacional do Galeão</div>
+          <div class="acard__terminal">Terminal 2 — Setor C</div>
+          <div class="acard__footer">
+            <a href="#contato" class="link-arrow">Ver localização →</a>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard__top">
+            <div class="acard__city">Campinas</div>
+            <div class="badge badge--soon"><span></span> Em breve</div>
+          </div>
+          <div class="acard__name">Aeroporto Internacional de Viracopos</div>
+          <div class="acard__terminal">Terminal Internacional</div>
+          <div class="acard__footer">
+            <a href="#nova-cidade" class="link-arrow">Receber novidades →</a>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard__top">
+            <div class="acard__city">Belo Horizonte</div>
+            <div class="badge badge--soon"><span></span> Em breve</div>
+          </div>
+          <div class="acard__name">Aeroporto Internacional de Confins</div>
+          <div class="acard__terminal">Terminal de Passageiros</div>
+          <div class="acard__footer">
+            <a href="#nova-cidade" class="link-arrow">Receber novidades →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. SUGIRA SUA CIDADE ========== -->
+  <section class="section bg-navy" id="nova-cidade">
+    <div class="container">
+      <div class="suggest-inner">
+        <div class="suggest-text" data-reveal>
+          <span class="label label--gold">Expansão</span>
+          <h2 class="title-serif title-serif--light">Quer o Mundo Submarino<br /><em>na sua cidade?</em></h2>
+          <p class="body-text body-text--light">
+            Estamos expandindo para novos aeroportos em todo o Brasil. Deixe sua sugestão e ajude a levar essa experiência para mais passageiros.
+          </p>
+        </div>
+        <form class="suggest-form" id="form-cidade" novalidate data-reveal data-reveal-delay="150">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fc-nome">Nome</label>
+              <input type="text" id="fc-nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-field">
+              <label for="fc-cidade">Cidade</label>
+              <input type="text" id="fc-cidade" name="cidade" placeholder="Sua cidade" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fc-aeroporto">Aeroporto</label>
+              <input type="text" id="fc-aeroporto" name="aeroporto" placeholder="Aeroporto mais próximo" required />
+            </div>
+            <div class="form-field">
+              <label for="fc-email">Email</label>
+              <input type="email" id="fc-email" name="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Quero na minha cidade</button>
+          <div class="form-success" id="form-cidade-ok" aria-live="polite">
+            ✓ Recebemos sua sugestão. Obrigado por fazer parte da expansão.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. GALERIA ========== -->
+  <section class="section bg-white" id="galeria">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label">Galeria</span>
+        <h2 class="title-serif">Veja como é<br /><em>por dentro</em></h2>
+      </div>
+      <div class="gallery" data-reveal>
+        <div class="gallery__track" id="galleryTrack">
+          <div class="gslide">
+            <div class="gcard gcard--photo">
+              <img src="imagens/galeria-por-dentro.webp" alt="Interior do cubo — visão do espaço imersivo" loading="lazy" />
+              <div class="gcard__label">Imagem por dentro — espaço imersivo</div>
+            </div>
+          </div>
+          <div class="gslide">
+            <div class="gcard gcard--photo">
+              <img src="imagens/galeria-imersao-3d.webp" alt="Imersão 3D — experiência no aeroporto" loading="lazy" />
+              <div class="gcard__label">Imersão 3D no terminal</div>
+            </div>
+          </div>
+          <div class="gslide">
+            <div class="gcard gcard--photo">
+              <img src="imagens/galeria-recife.webp" alt="Mergulho em recife de coral — conteúdo 360°" loading="lazy" />
+              <div class="gcard__label">Mergulho em recife de coral</div>
+            </div>
+          </div>
+          <div class="gslide">
+            <div class="gcard gcard--photo">
+              <img src="imagens/galeria-familia-vr.webp" alt="Passageira com óculos VR dentro do Mundo Submarino" loading="lazy" />
+              <div class="gcard__label">Dentro do Mundo Submarino com óculos VR</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__controls">
+          <button class="gallery__btn" id="galleryPrev" aria-label="Anterior">←</button>
+          <div class="gallery__dots" id="galleryDots"></div>
+          <button class="gallery__btn" id="galleryNext" aria-label="Próximo">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. BENEFÍCIOS ========== -->
+  <section class="section bg-navy" id="beneficios">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label label--gold">Benefícios</span>
+        <h2 class="title-serif title-serif--light">Por que viver<br /><em>essa experiência?</em></h2>
+      </div>
+      <div class="benefits" data-reveal>
+        <div class="bcard">
+          <div class="bcard__icon">😮‍💨</div>
+          <h3>Relaxe antes do voo</h3>
+          <p>Desconecte do estresse do aeroporto por cinco minutos de pura tranquilidade oceânica.</p>
+        </div>
+        <div class="bcard">
+          <div class="bcard__icon">🧘</div>
+          <h3>Reduza a ansiedade</h3>
+          <p>Sons e imagens do oceano reduzem o estresse e preparam sua mente para a viagem.</p>
+        </div>
+        <div class="bcard">
+          <div class="bcard__icon">✨</div>
+          <h3>Viva algo único</h3>
+          <p>Uma experiência que não existe em nenhum outro contexto do cotidiano.</p>
+        </div>
+        <div class="bcard">
+          <div class="bcard__icon">🌿</div>
+          <h3>Conecte-se ao oceano</h3>
+          <p>Desperte a consciência ambiental e a admiração pelos ecossistemas marinhos.</p>
+        </div>
+        <div class="bcard">
+          <div class="bcard__icon">⏰</div>
+          <h3>Aproveite a espera</h3>
+          <p>Transforme o tempo ocioso em um momento memorável da sua viagem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. PARA QUEM ========== -->
+  <section class="section bg-sand" id="para-quem">
+    <div class="container grid-2col grid-2col--tight">
+      <div class="col-text" data-reveal>
+        <span class="label">Público</span>
+        <h2 class="title-serif">Uma experiência<br /><em>para todos</em></h2>
+        <p class="body-text">Não importa quem você é ou para onde está indo — o Mundo Submarino 360° oferece algo especial para cada tipo de viajante.</p>
+        <ul class="audience-list">
+          <li><span>👨‍👩‍👧‍👦</span><div><strong>Famílias</strong><p>Uma pausa mágica para pais e filhos</p></div></li>
+          <li><span>🧒</span><div><strong>Crianças</strong><p>Descoberta, encantamento e aprendizado</p></div></li>
+          <li><span>💑</span><div><strong>Casais</strong><p>Momento de conexão e leveza compartilhada</p></div></li>
+          <li><span>💼</span><div><strong>Viajantes frequentes</strong><p>Uma pausa merecida entre conexões</p></div></li>
+          <li><span>🔍</span><div><strong>Curiosos</strong><p>Tecnologia e natureza em perfeita harmonia</p></div></li>
+        </ul>
+      </div>
+      <div class="col-visual" data-reveal data-reveal-delay="150">
+        <div class="audience-mosaic">
+          <div class="am-card am-card--1"><span>👨‍👩‍👧‍👦</span><p>Famílias</p></div>
+          <div class="am-card am-card--2"><span>🧒</span><p>Crianças</p></div>
+          <div class="am-card am-card--3"><span>💑</span><p>Casais</p></div>
+          <div class="am-card am-card--4"><span>💼</span><p>Executivos</p></div>
+          <div class="am-center"><span>🌊</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 9. QUEM SOMOS ========== -->
+  <section class="section bg-white" id="sobre">
+    <div class="container grid-2col grid-2col--reverse">
+      <div class="col-visual" data-reveal>
+        <div class="company-panel">
+          <div class="company-panel__header">
+            <span class="label">Tecnologia</span>
+          </div>
+          <div class="tech-list">
+            <div class="tech-item">
+              <span class="tech-item__icon">💡</span>
+              <div>
+                <strong>LED Transparente</strong>
+                <p>Estrutura modular de alta luminosidade</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item__icon">🎬</span>
+              <div>
+                <strong>Vídeo 8K 360°</strong>
+                <p>Conteúdo oceânico em resolução máxima</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item__icon">🔊</span>
+              <div>
+                <strong>Áudio Espacial</strong>
+                <p>Som imersivo sincronizado com o vídeo</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-item__icon">📡</span>
+              <div>
+                <strong>Gestão Remota</strong>
+                <p>Operação e monitoramento centralizados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-text" data-reveal data-reveal-delay="150">
+        <span class="label">Quem Somos</span>
+        <h2 class="title-serif">Pioneiros em experiências<br /><em>imersivas aeroportuárias</em></h2>
+        <p class="body-text">
+          Somos uma empresa especializada em experiências imersivas em ambientes de alto fluxo de passageiros.
+        </p>
+        <p class="body-text">
+          Criamos soluções que combinam tecnologia de ponta, entretenimento e conexão emocional — transformando espaços comuns em momentos inesquecíveis para quem passa pelos maiores terminais do Brasil.
+        </p>
+        <div class="company-numbers">
+          <div class="cnumber">
+            <span class="cnumber__n">8+</span>
+            <span class="cnumber__l">Aeroportos atendidos</span>
+          </div>
+          <div class="cnumber">
+            <span class="cnumber__n">135M</span>
+            <span class="cnumber__l">Passageiros por ano</span>
+          </div>
+          <div class="cnumber">
+            <span class="cnumber__n">98%</span>
+            <span class="cnumber__l">Taxa de satisfação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. CONTATO ========== -->
+  <section class="section bg-sand" id="contato">
+    <div class="container grid-2col">
+      <div class="col-text" data-reveal>
+        <span class="label">Contato</span>
+        <h2 class="title-serif">Fale<br /><em>com a gente</em></h2>
+        <p class="body-text">Tem interesse em instalar o Mundo Submarino 360° no seu aeroporto ou espaço de alto fluxo? Entre em contato.</p>
+        <ul class="contact-info">
+          <li>
+            <div class="ci-icon">✉</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:contato@mundosubmarino360.com.br">contato@mundosubmarino360.com.br</a>
+            </div>
+          </li>
+          <li>
+            <div class="ci-icon">💬</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/5511900000000" target="_blank" rel="noopener">+55 (11) 9 0000-0000</a>
+            </div>
+          </li>
+          <li>
+            <div class="ci-icon">⏱</div>
+            <div>
+              <strong>Atendimento</strong>
+              <span>Segunda a Sexta, 9h às 18h</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-form" data-reveal data-reveal-delay="150">
+        <form class="contact-form" id="form-contato" novalidate>
+          <div class="form-field">
+            <label for="cc-nome">Nome</label>
+            <input type="text" id="cc-nome" name="nome" placeholder="Seu nome completo" required />
+          </div>
+          <div class="form-field">
+            <label for="cc-email">Email</label>
+            <input type="email" id="cc-email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-field">
+            <label for="cc-msg">Mensagem</label>
+            <textarea id="cc-msg" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--navy btn--full">Enviar mensagem</button>
+          <div class="form-success" id="form-contato-ok" aria-live="polite">
+            ✓ Mensagem enviada. Retornaremos em breve.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 11. CTA FINAL ========== -->
+  <section class="cta-final" id="cta">
+    <div class="cta-final__bg"></div>
+    <div class="container cta-final__inner" data-reveal>
+      <div class="pill pill--gold-outline">🌊 Disponível agora nos maiores aeroportos</div>
+      <h2 class="cta-final__title">
+        Descubra o oceano<br /><em>no seu próximo embarque</em>
+      </h2>
+      <p class="cta-final__sub">
+        Cinco minutos que transformam a espera em memória.
+      </p>
+      <div class="cta-final__actions">
+        <a href="#onde-encontrar" class="btn btn--gold btn--large">Encontrar unidade</a>
+        <a href="#como-funciona" class="btn btn--outline-light btn--large">Ver como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">
+          <span class="logo__mark">MS</span>
+          <span class="logo__text">Mundo Submarino <strong>360°</strong></span>
+        </a>
+        <p>Experiência disponível nos maiores aeroportos do Brasil</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram" class="social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Experiência</h4>
+        <ul>
+          <li><a href="#experiencia">Sobre</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Aeroportos</h4>
+        <ul>
+          <li><a href="#onde-encontrar">Guarulhos — SP</a></li>
+          <li><a href="#onde-encontrar">Congonhas — SP</a></li>
+          <li><a href="#onde-encontrar">Brasília — DF</a></li>
+          <li><a href="#onde-encontrar">Galeão — RJ</a></li>
+          <li><a href="#onde-encontrar">Viracopos — SP</a></li>
+          <li><a href="#onde-encontrar">Confins — MG</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#nova-cidade">Sugira sua cidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2025 Mundo Submarino 360°. Todos os direitos reservados.</p>
+      <p>Experiência disponível em aeroportos do Brasil</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
