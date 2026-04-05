@@ -1581,6 +1581,26 @@ input, textarea { outline: none; font-family: inherit; }
   font-size: 2.4rem;
   line-height: 1;
 }
+/* Logo Oceanoterapia no quote box */
+.ocea-quote__logo {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  filter: brightness(0) invert(1); /* branca sobre fundo navy */
+  margin-bottom: 4px;
+}
+/* Logo Oceanoterapia no cabeçalho da seção */
+.ocea-logo {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  display: block;
+  filter: grayscale(1) contrast(1.1); /* mantém visual escuro coerente */
+  border-radius: var(--radius-md);
+}
 .ocea-quote blockquote {
   font-family: 'Sora', system-ui, sans-serif;
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
