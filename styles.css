@@ -879,6 +879,25 @@ input, textarea { outline: none; font-family: inherit; }
   border-color: var(--ocean-light);
 }
 .acard:hover::after { transform: scaleX(1); }
+
+/* Card de destaque — Confins */
+.acard--featured {
+  border: 2px solid var(--ocean);
+  background: linear-gradient(145deg, #f0f8ff 0%, var(--white) 100%);
+  grid-column: 1 / -1; /* ocupa a linha inteira */
+}
+.acard--featured::after {
+  height: 4px;
+  background: linear-gradient(to right, var(--ocean), var(--aqua));
+  transform: scaleX(1); /* sempre visível */
+}
+.acard--featured .acard__name {
+  font-size: 1.15rem;
+}
+.acard--featured .acard__city {
+  color: var(--ocean);
+}
+
 .acard__top {
   display: flex;
   align-items: center;
