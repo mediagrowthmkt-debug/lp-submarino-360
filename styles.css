@@ -1491,4 +1491,197 @@ input, textarea { outline: none; font-family: inherit; }
   .audience-mosaic { max-width: 320px; }
   .am-card { width: 96px; height: 96px; font-size: 1.5rem; }
   .am-center { width: 80px; height: 80px; font-size: 1.8rem; }
+  /* Oceanoterapia mobile */
+  .ocea-cards { grid-template-columns: 1fr; }
+  .ocea-intro { grid-template-columns: 1fr; gap: 40px; }
+  .ocea-stat-banner__inner { flex-direction: column; gap: 32px; }
+  .ocea-stat__divider { width: 48px; height: 1px; }
+  .ocea-quote { padding: 28px 24px; }
+}
+
+/* ============================================================
+   OCEANOTERAPIA — Seção #oceanoterapia
+   ============================================================ */
+
+/* Espaço extra acima do sub-título da seção */
+.section-header--mt { margin-top: clamp(60px, 8vw, 96px); }
+
+/* Título menor para o sub-cabeçalho interno */
+.title-serif--sm {
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+}
+
+/* ——— Intro 2 colunas ——— */
+.ocea-intro {
+  margin-top: 56px;
+  align-items: start;
+}
+
+/* ——— Quote box ——— */
+.ocea-highlight-box {
+  display: flex;
+  align-items: stretch;
+}
+
+.ocea-quote {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.ocea-quote::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top right, rgba(0,180,216,.18), transparent 60%);
+  pointer-events: none;
+}
+.ocea-quote__icon {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+.ocea-quote blockquote {
+  font-family: 'Sora', system-ui, sans-serif;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--white);
+  quotes: "\201C" "\201D";
+}
+.ocea-quote blockquote::before {
+  content: open-quote;
+  color: var(--aqua-light);
+  margin-right: 2px;
+}
+.ocea-quote blockquote::after {
+  content: close-quote;
+  color: var(--aqua-light);
+  margin-left: 2px;
+}
+.ocea-quote cite {
+  font-size: .82rem;
+  font-style: normal;
+  color: var(--aqua-light);
+  letter-spacing: .04em;
+  font-weight: 500;
+}
+
+/* ——— Cards 6 benefícios ——— */
+.ocea-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.ocea-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  position: relative;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.ocea-card:hover {
+  border-color: var(--aqua);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+.ocea-card__num {
+  font-family: 'Sora', system-ui, sans-serif;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  color: var(--aqua);
+  margin-bottom: 14px;
+}
+.ocea-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.ocea-card h4 {
+  font-family: 'Sora', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.ocea-card p {
+  font-size: .92rem;
+  color: var(--ink-mid);
+  line-height: 1.7;
+}
+
+/* ——— Banner de dados científicos ——— */
+.ocea-stat-banner {
+  margin-top: clamp(56px, 8vw, 88px);
+  background: linear-gradient(135deg, var(--ocean) 0%, var(--navy-mid) 100%);
+  border-radius: var(--radius-lg);
+  padding: clamp(36px, 5vw, 56px) clamp(28px, 5vw, 56px);
+  overflow: hidden;
+  position: relative;
+}
+.ocea-stat-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at bottom left, rgba(0,180,216,.20), transparent 55%);
+  pointer-events: none;
+}
+.ocea-stat-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
+}
+.ocea-stat {
+  flex: 1;
+  text-align: center;
+}
+.ocea-stat__n {
+  display: block;
+  font-family: 'Sora', system-ui, sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -.03em;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.ocea-stat__l {
+  font-size: .88rem;
+  color: rgba(255,255,255,.78);
+  line-height: 1.55;
+}
+.ocea-stat__l small {
+  display: block;
+  margin-top: 4px;
+  font-size: .76rem;
+  color: rgba(255,255,255,.50);
+  font-style: italic;
+}
+.ocea-stat__divider {
+  width: 1px;
+  height: 72px;
+  background: rgba(255,255,255,.18);
+  flex-shrink: 0;
+}
+
+/* ——— Responsivo: tablet ——— */
+@media (max-width: 900px) {
+  .ocea-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .ocea-cards { grid-template-columns: 1fr; }
+  .ocea-intro { grid-template-columns: 1fr; gap: 40px; }
+  .ocea-stat-banner__inner { flex-direction: column; gap: 32px; }
+  .ocea-stat__divider { width: 48px; height: 1px; }
+  .ocea-quote { padding: 28px 24px; }
 }
