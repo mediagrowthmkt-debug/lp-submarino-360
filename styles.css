@@ -307,6 +307,24 @@ input, textarea { outline: none; font-family: inherit; }
 }
 .header.scrolled .logo { color: var(--ink); }
 .logo--footer { color: var(--white); }
+
+/* Logo imagem */
+.logo__img {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  transition: opacity var(--transition);
+}
+.logo__img--footer {
+  height: 48px;
+  filter: brightness(0) invert(1); /* torna branca no footer escuro */
+}
+/* Quando header não está scrollado (fundo transparente/vídeo) mantém a logo visível */
+.header.scrolled .logo__img {
+  filter: none; /* mostra a logo original no fundo branco */
+}
+
 .logo__mark {
   width: 36px;
   height: 36px;
